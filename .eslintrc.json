@@ -37,13 +37,16 @@
         "prefer-promise-reject-errors": "error",
         "react/react-in-jsx-scope": "off",
         "camelcase": "error",
-        "spaced-comment": "error",
+        "spaced-comment": ["error", "always", { "markers": ["/ <reference"] }],
         "quotes": ["error", "single"],
         "no-duplicate-imports": "error"
     },
     "settings": {
         "import/resolver": {
             "typescript": {}
+        },
+        "react": {
+            "version": "detect"
         }
     }
 }
